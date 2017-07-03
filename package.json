@@ -29,6 +29,9 @@
   },
   "scripts": {
     "start": "babel-node app.js",
+    "startDb" : "docker run -d -p 28015:28015 -p 8090:8080 -v $PWD/db:/data --name expertsdb rethinkdb",
+    "stopDb" : "docker stop expertsdb",
+    "removeDb" : "docker rm expertsdb",
     "test": "mocha --compilers js:babel-core/register test/api/*"
   },
   "babel": {
