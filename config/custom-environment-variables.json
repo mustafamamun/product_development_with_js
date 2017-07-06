@@ -2,10 +2,9 @@
  {
   "port" : "APPLICATION_PORT",
   "node_env" : "NODE_ENV",
-  "mongoConfig" : {
+  "rethinkConfig" : {
     "host" : "MONGO_DB_HOST",
     "port" : "MONGO_DB_PORT",
-    "db" : "DATABASE_NAME",
-    "collection" : "COLLECTION_NAME"
+    "db" : "DATABASE_NAME"
   }
 }

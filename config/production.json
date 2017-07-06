@@ -1,11 +1,10 @@
 
- {
-  "port" : 10010,
-  "node_env" : "production",
-  "mongoConfig" : {
-    "host" : "127.0.0.1",
-    "port" : "27017",
-    "db" : "order_management",
-    "collection" : "orders"
-  }
+{
+ "port" : 10010,
+ "node_env" : "development",
+ "rethinkConfig" : {
+   "host" : "127.0.0.1",
+   "port" : "28015",
+   "db" : "expertsDb"
+ }
 }

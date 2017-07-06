@@ -1,10 +1,10 @@
 /*jslint node: true */
 'use strict';
-import connection  from './api/services/db/connection';
+import { thinky } from './api/services/db';
 import server from './server';
 import { logger } from './api/services/util/logger';
 
-connection.init({})
+thinky.dbReady()
 .then(server.start)
 .then(()=>{
 	console.log('server started');

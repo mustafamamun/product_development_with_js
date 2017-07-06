@@ -25,7 +25,9 @@ function start() {
 
           // install middleware
           swaggerExpress.register(app);
-
+          app.use((err, req, res, next)=>{
+            res.status(err.status || 500).json( {message : err.message || 'Internal server error'});
+          });
           var port = config.get('port') || 10010;
           app.listen(port);
           resolve();
