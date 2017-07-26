@@ -2,7 +2,7 @@
 'use strict';
 import { thinky } from './api/services/db';
 import server from './server';
-import { logger } from './api/services/util/logger';
+import { logger } from './api/services/util';
 
 thinky.dbReady()
 .then(server.start)

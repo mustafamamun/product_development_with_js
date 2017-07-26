@@ -6,5 +6,9 @@
    "host" : "127.0.0.1",
    "port" : "28015",
    "db" : "expertsDb"
+ },
+ "authConfig": {
+   "passwordSalt" : "51AJmrKBhNWjghqJUKPjAlDZyCRvg1E5Gw29Rvv7THtrhIajJbd7C46gm3aF0pue",
+   "sessionSecret" : "sNZEeEKIvAPAnOYcM2PJq8h0r4vjGcQnMOCer9M9S9ilHhbLwUrbMlA6aoKsQ9Sq"
  }
 }
